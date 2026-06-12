@@ -6,6 +6,10 @@
 <title>Hakkımda</title>
 
 <style>
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         margin: 0;
         font-family: "Story Script", sans-serif;
@@ -42,6 +46,42 @@
 
     .highlight {
         color: #f2e87c;
+    }
+
+    img {
+        max-width: 90%;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        img {
+            width: 200px !important;
+            height: 200px !important;
+        }
+        .card {
+            padding: 15px;
+        }
+    }
+
+    @media (max-width: 400px) {
+        img {
+            width: 150px !important;
+            height: 150px !important;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 18px;
+        }
     }
 </style>
 

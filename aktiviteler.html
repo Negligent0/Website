@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
         margin: 0;
         font-family: "Story Script", sans-serif;
@@ -39,6 +42,24 @@
     .highlight {
         color: #f2e87c;
     }
+
+    @media (max-width: 600px) {
+        .container {
+            padding: 15px;
+        }
+        .card {
+            padding: 15px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        p, li {
+            font-size: 15px;
+        }
+    }
     </style>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,6 +72,7 @@
     <title>Aktiviteler</title>
 </head>
 <body>
+    <audio src="fonmuzik.mp3" autoplay loop></audio>
 
     <div class="container">
     <h1>Model United Nations</h1>

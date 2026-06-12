@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             margin: 0;
             background:black;
@@ -35,18 +38,44 @@
         .highlight {
             color: #f2e87c;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            .card {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            h3 {
+                font-size: 17px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeler</title>
 </head>
 <body>
+    <audio src="fonmuzik.mp3" autoplay loop></audio>
     <div class="container">
         <h1>Projeler</h1>
         <div class="card">
             <h2>OMEGA</h2>
                 <p>OMEGA, benim kurucusu olduğum ve yönettiğim bir holding şirketi/topluluktur. OMEGA'nın tema renkleri siyahın tonları ve sarının tonlarıdır. OMEGA'nın logosunda, siyah bir fonun tam merkezinde, tepe noktalarından birleşen iki dik üçgen ile altlarında yukarı doğru yönelmiş geniş bir açı çizgisinden oluşan altın sarısı geometrik bir amblem yer alır. Bu amblem, "OMEGA'nın sınırlandırılmış sonsuz gücünü" sembolize eder. Alttaki çizgi ise, bu kurumu havada tutan bilimi temsil eder. Bu merkez simgesinin sağ ve sol yanlarında, içi dolu birer altın sarısı daire bulunur. Bu dairelerden sağdaki, Enes Çiçek'in eşini; soldaki ise, Enes Çiçek'i temsil eder. Dairelerin dışından başlayarak görselin iki ucuna kadar uzanan düz yatay çizgiler ise insanları ve sonsuzluğa giden nüfuzlarını sembolize eder. Tüm kompozisyon siyah zemin üzerinde asil bir kontrast oluşturan altın sarısı unsurların kusursuz yatay simetrisiyle şekillenmiştir. OMEGA'nın temel amacı, ben ve benim gibilerin önünü açmak, insanlığı bilime teşvik etmektir. Bu proje, hala tamamlanmamıştır ve yaptığım en büyük projedir. OMEGA, bir platformdan da öte, insanlığa her türlü koldan yararı dokunan bir ekosistem olma özelliği taşır. Şu an bunları okuduğunuz web sayfası da OMEGA'nın bir parçasıdır. OMEGA için en büyük hayalim, insanlığı Kardashev skalasında önemli ölçüde yükseltmek, teknolojide dünyaya çağ atlatmak ve bunu yapmak isteyen diğer girişimcilerle ortak bir ağ oluşturmaktır. OMEGA'nın ilk adımı, girişim fikirlerini gerçekleştirmeyi amaçlayan OMEGA Technologies şirketidir. Bu şirketi, OMEGA Game Studios ve OMEGA Aerospace takip edecektir.
-                <img src="OMEGA.jpeg" alt="OMEGA Logo" style="display: block; margin: 15px auto; border-radius: 10px; width: 400px; height: auto; object-fit: cover; box-shadow: 0 0 10px rgba(242, 232, 124, 0.5);">
+                <img src="OMEGA.jpeg" alt="OMEGA Logo" style="display: block; margin: 15px auto; border-radius: 10px; width: 400px; object-fit: cover; box-shadow: 0 0 10px rgba(242, 232, 124, 0.5);">
                     <h3>OMEGA Technologies</h3>
                         OMEGA Technologies, vizyonunun aşırı geniş olmasına karşın, an itibariyle kendi yarattığım girişim fikirlerini gerçeğe dönüştürmeyi odaklayan, insanlığa faydalı olmayı amaçlayan bir kuruluştan ibarettir. Şu ana kadar sosyal medya hesaplarım üzerinden yaptığım anketlerle onlarca girişim fikri edinmiş olup, bunları gerçeğe dökme üzerine çalışmalarımı sürdürmüş ve sürdürmeye devam edeceğim.
                     <h3>OMEGA Game Studios</h3>
@@ -63,21 +92,22 @@
         <div class="card">
             <h2>Orman Muhafızı</h2>
                 <p>Orman Muhafızı, lisede 10. sınıfta TÜBİTAK 4006 Bilim Fuarları Destekleme Programı kapsamında ŞÖNKAL Game Studio ekibi ile yaptığımız bir video oyunudur. Bu proje, aynı zamanda benim oyun sektörüne attığım ilk somut adımdır. Saygıdeğer arkadaşım Asım ÖZKAN, bu projenin yöneticiliğini üstlenmiş ve bana oyunun ana menüsü ve leaderboard sistemini yapmam için şans tanımıştır. Bu, benim oyun sektörüne teşvik edilmeme sebep olmuştur. Zaten küçüklüğünden beridir oyun oynamayı seven birisi olarak, Orman Muhafızı adeta bir kilometretaşı olmuştur benim için. Unity Engine kullanarak yaptığımız oyunu, fuar sırasında onlarca kişi denemiş ve çok beğenmiştir. Öyle ki, oyuncular arası rekabet beklediğimizden daha fazla olmuştur. Arkadaşım Zeynep Yağmur SUSAM da projedeki assetleri yapmıştır.
-                <img src="ormanmuhafizi.jpeg" alt="Orman Muhafızı" style="display: block; margin: 15px auto; border-radius: 10px; width: 400px; height: auto; object-fit: cover; box-shadow: 0 0 10px rgba(242, 232, 124, 0.5);">
-                <img src="ormanmuhafizi2.jpeg" alt="Orman Muhafızı" style="display: block; margin: 15px auto; border-radius: 10px; width: 400px; height: auto; object-fit: cover; box-shadow: 0 0 10px rgba(242, 232, 124, 0.5);">
+                <img src="ormanmuhafizi.jpeg" alt="Orman Muhafızı" style="display: block; margin: 15px auto; border-radius: 10px; width: 400px; object-fit: cover; box-shadow: 0 0 10px rgba(242, 232, 124, 0.5);">
+                <img src="ormanmuhafizi2.jpeg" alt="Orman Muhafızı" style="display: block; margin: 15px auto; border-radius: 10px; width: 400px; object-fit: cover; box-shadow: 0 0 10px rgba(242, 232, 124, 0.5);">
                 </p>
         </div>
         <div class="card">
             <h2>ŞÖNKAL Science</h2>
                 <p>ŞÖNKAL Science, saygıdeğer arkadaşım Rüzgar VATANSEVER ile birlikte kurduğumuz, lisemizdeki diğer arkadaşlarımızı bilime ve teknolojiye teşvik etmek, popüler bilim yazarlığına teşvik etmek amacına sahip bir öğrenci kulübüdür. bu kulüpte, Instagram ağırlıklı olarak gönderiler yayınlamaktayız. Bu proje ile birlikte okulumuzda bilim kültürü oluşturmayı amaçlıyoruz. <a style="color: #f2e87c; text-decoration: underline;" href="https://www.instagram.com/sonkal.science/">ŞÖNKAL Science Instagram Hesabı</a> üzerinden paylaşımlarımıza ulaşabilirsiniz. 
-                    <img src="sonkalscience.png" alt="ŞÖNKAL Science" style="display: block; margin: 15px auto; border-radius: 10px; width: 400px; height: auto; object-fit: cover; box-shadow: 0 0 10px rgba(242, 232, 124, 0.5);">
+                    <img src="sonkalscience.png" alt="ŞÖNKAL Science" style="display: block; margin: 15px auto; border-radius: 10px; width: 400px; object-fit: cover; box-shadow: 0 0 10px rgba(242, 232, 124, 0.5);">
                 </p>
         </div>
         <div class="card">
             <h2>ŞÖNKAL Game Studio</h2>
                 <p>ŞÖNKAL Game Studio, saygıdeğer arkadaşlarım Asım Özkan ve Zeynep Yağmur SUSAM ile birlikte kurduğumuz, lisemizdeki diğer arkadaşlarımızı oyun sektörüne çekmek, girişimcilik konusunda fikir vermek ve oyun yapımıyla ilgili teşvikler oluşturmak için kurduğumuz öğrenci kulübüdür. Okuldaki ve okul dışındaki projelerde oyun tasarımı konusunda yer alan kulübümüz, okulumuzu akademik anlamda yükseltmeyi hedefleyen bir proje haline gelmiştir. <a style="color: #f2e87c; text-decoration: underline;" href="https://www.instagram.com/sonkalgamestudio/">ŞÖNKAL Game Studio Instagram Hesabı</a> üzerinden paylaşımlarımıza ulaşabilirsiniz. 
-                    <img src="gamestudio.png" alt="ŞÖNKAL Game Studio" style="display: block; margin: 15px auto; border-radius: 10px; width: 400px; height: auto; object-fit: cover; box-shadow: 0 0 10px rgba(242, 232, 124, 0.5);">
+                    <img src="gamestudio.png" alt="ŞÖNKAL Game Studio" style="display: block; margin: 15px auto; border-radius: 10px; width: 400px; object-fit: cover; box-shadow: 0 0 10px rgba(242, 232, 124, 0.5);">
                 </p>
+        </div>
     </div>
 </body>
 </html>

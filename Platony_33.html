@@ -1,35 +1,92 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <style>
-        body {
-            margin: 0;
-            background:black;
-            background-size: cover;
-            background-position: center;
-            color: white;
-        }
-        .card {
-            background: rgb(29, 28, 28);
-            padding: 20px;
-            margin: 15px 0;
-            width: 350px;
-            height: auto;
-            position: absolute;
-            left: 35%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgb(29, 28, 28);
-        }
-    </style>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" description="Platony 33">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platony 33</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin:0;
+            background:black;
+            color:white;
+            font-family: Georgia, serif;
+        }
+
+        .container{
+            width:100%;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            padding:20px;
+        }
+
+        h1{
+            color:#f2e87c;
+            font-size:40px;
+            text-align:center;
+            margin-bottom:20px;
+        }
+
+        .card{
+            background:rgb(29,28,28);
+            width:90%;
+            max-width:700px;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgb(29,28,28);
+            line-height:1.8;
+            font-size:18px;
+        }
+
+        @media (max-width:768px){
+
+            h1{
+                font-size:32px;
+            }
+
+            .card{
+                width:95%;
+                padding:20px;
+                font-size:16px;
+                line-height:1.7;
+            }
+
+        }
+
+        @media (max-width:480px){
+
+            h1{
+                font-size:26px;
+            }
+
+            .card{
+                width:98%;
+                padding:15px;
+                font-size:15px;
+                line-height:1.6;
+            }
+
+        }
+
+    </style>
 </head>
+
 <body>
-    <div style="text-align: center; padding: 20px;">
-   <h1 style="color:#f2e87c; font-size: 40px;">Platony 33</h1> 
-<div class="card" style="margin: 15px; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgb(29, 28, 28); text-align: left; ">
-Aşkımdan divaneye döndüm,<br>
+
+    <div class="container">
+
+        <h1>Platony 33</h1>
+
+        <div class="card">
+
+            Aşkımdan divaneye döndüm,<br>
 Varlığımı hiçliğe gömdüm,<br>
 Bir badem ağacının altında,<br>
 Karanlık bir gece gördüm. <br><br>
@@ -164,6 +221,10 @@ Eğer aşk buysa, ben varım.<br>
 Yoksa da ben yine varım, göçtüğümde dahi.<br><br>
 Kış çiçekli badem ağacına...<br><br>
 -Enes Çiçek
-</div>
+
+        </div>
+
+    </div>
+
 </body>
 </html>
